@@ -1,0 +1,34 @@
+// Clase main que será chamada de calculadorapp
+
+public class Calculadoraapp
+
+private static final Scanner TECLADO = new scanner(System.in);
+
+private static in LeInteiro(string mensagem)
+{ system.out.print(mensagem);
+return Interger.parseInt(TECLADO.nextline());
+}
+
+public stact void main (string[] args}
+{
+int resultado = 0;
+string operador = null;
+
+system.out.print("=" + resultado);
+operador = LeString("");
+int valor = LeInteiro("");
+if(operador.equals("+");
+{  resultado = Caculadora.somar(resultado, valor);
+}  else if(operador.equals("-"))
+{  resultado = Calculadora.subtrair(resultado, valor);
+}  else if(operador.equals("*"))
+{  resultado = calculadora.multiplicar(resultado, valor);
+{  resultado = calculadora.dividr(resultado, valor);
+}else if(operador.equals("%"))
+{  resultado = Calculadora.obterResto(resultado, valor);
+}
+}while(!operador.isEmpy());
+
+}
+
+} 
