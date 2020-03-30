@@ -1,0 +1,35 @@
+// =====================================================================================================================
+// Calculadora com entrada de metodos estaticos realizando as operações de (Divisão/ multiplicação, sobtração e adição)
+// ===================================================================================================================== 
+
+public class Calculadora {
+
+private int restoDivisao;
+
+public static int(int resultado, int valor)
+{ return resultado + valor;
+}
+
+public static int subtrair(int resultado, int valor)   
+{    return resultado - valor;
+}
+public static int multiplicar(int resultado, int valor)
+{    int multiplicação = 0;
+     for(int i=0; i < resultado ; i++)
+{    multiplicacao += valor; 
+}
+return multiplicacao
+}
+public static int dividir(int resultado, int valor) 
+{   int divisao = 0;
+    while(resultado >= valor)
+{   resultado -= valor;
+    divisao++;
+    restoDivisao = resultado; 
+}
+return divisao;
+}
+public static int obterresto(int resultado, int valor) 
+{  dividir(resultado,valor);
+return restoDivisao;
+}
